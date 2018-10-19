@@ -53,16 +53,22 @@ impl Payload {
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Serialize, Deserialize)]
 #[serde(tag = "type", rename_all = "camelCase")]
 enum Emoji {
-    Like,   // 👍
-    Lol,    // 😂
-    Shook,  // 😮
-    Scream, // 😱
-    Sweat,  // 😅
-    Angry,  // 😡
-    Cry,    // 😭
-    Scare,  // 😨
-    Heart,  // ❤️
-    Poop,   // 💩
+    Like,    // 👍
+    Lol,     // 😂
+    Shook,   // 😮
+    Scream,  // 😱
+    Sweat,   // 😅
+    Angry,   // 😡
+    Cry,     // 😭
+    Scare,   // 😨
+    Heart,   // ❤️
+    Poop,    // 💩
+    Tada,    // 🎉
+    Starry,  // 🤩
+    Clap,    // 👏
+    Dislike, // 👎
+    Think,   // 🤔
+    Sparkle, // ✨
 }
 
 struct Session {
